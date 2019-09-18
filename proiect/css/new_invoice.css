@@ -1,0 +1,237 @@
+body{
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 60%;
+    background-attachment: fixed;
+
+}
+
+.supplierCustomerBtn{
+    background-color: rgb(76, 136, 236);
+    color: white;
+    padding: 0.6vw;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.supplierCustomer{
+    font-size: 1.4rem;
+}
+
+.supplierCustomerBtn:hover, .supplierBtn:focus{
+    background-color: #3178ee;
+}
+.supplier-content:focus{
+    display: none;
+}
+.searchInput{
+    box-sizing: border-box;
+    background-image: url("https://img.icons8.com/ios/20/000000/search-filled.png");
+    background-position:20px 18px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.searchInput:focus{
+    outline: 3px solid #ddd;
+}
+
+.dropdownSupplier{
+    position: relative;
+    display: inline-block;
+}
+
+.supplier-content{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.supplier-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.customer-content{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    right: 0;
+}
+
+.customer-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.searchList a:hover{
+    background-color: #ddd;
+    text-decoration: none;
+    color: inherit;
+   
+}
+.searchList {
+    overflow: scroll;
+    height: 30vh;
+}
+/* input (center) */
+.form-control{
+    opacity: 0.7;
+}
+
+/* table rows */
+#quantity{
+    width: 2vw;
+}
+#quantity input{
+    outline: none;
+    background-color: transparent;
+    border: 0 solid;
+}
+#product{
+    width: 2vw;
+}
+#product input{
+    outline: none;
+    background-color: transparent;
+    border: 0 solid;
+}
+
+
+
+.show{
+    display: block;
+}
+/* add new row */
+.addNew{
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(76, 136, 236);
+    margin-bottom: 7px;
+    
+    
+}
+.addNew a{
+    text-decoration: none;
+    color: white;
+
+}
+.addNew a:hover{
+    text-decoration-color: initial;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+}
+.centerPg{
+    margin-bottom: 7vh;
+}
+
+.customer{   
+    float: right;
+    position: relative;
+}
+#invoiceContainer .invoiceId{
+     margin: 0 auto;
+  
+}
+.invoiceId{
+    width: 26vw;
+    margin-left: 20vw;
+    
+}
+.input-group-text{
+    width: 6.5vw;
+}
+/* save button */
+.saveBtn{
+    float: right;
+    position: relative;
+    right: 1.6vw;
+    background-color:  rgb(76, 136, 236);
+    border: none;
+    color: white;
+    width: 6vw;
+    border-radius: 4px;
+}
+
+.saveBtn:hover{
+    background-color: #3178ee;
+}
+/* new row button */
+.newRow{
+    font-weight: bold;
+    float: left;
+    position: relative;
+    /* right: 1.8vw; */
+    background-color:  rgb(76, 136, 236);
+    border: none;
+    color: white;
+    width: 6vw;
+    border-radius: 4px;
+}
+
+.newRow:hover{
+    background-color: #3178ee;
+}
+
+.container{
+    margin-top: 8vh;
+    width: 13vw; 
+    left: 7.5vw;
+    position: relative;
+
+}
+
+
+@media(max-width: 768px){
+    .centerPg{
+      
+        margin-bottom: 7vh;
+        display: block;
+    }
+    .input-group-text{
+        width: 16vw;
+    }
+    .invoiceId{
+        width: 60vw;
+        margin-left: 10%;
+        
+    }
+    .customer-content{
+        right: 0;
+    }
+    #invoiceContainer{
+        margin-right: 10vw;
+        
+    }
+    .supplier{
+        margin-left: 20vw;
+        margin-right: 20vw;
+        
+    }
+    .customer{
+        
+        margin-right: 23vw;
+        
+    }
+    .supplier-content{
+        right: 0;
+    }
+    
+}

@@ -1,0 +1,23 @@
+html{
+    font-size: 100%;
+}
+body{
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 60%;
+    background-attachment: fixed;
+}
+
+
+/* supplier table */
+.invoiceTable{
+    margin-top: 25vh;
+    position: relative;
+    width: 75vw;
+    left: 10vw;
+  
+}
+ @media(max-width: 768px){
+     
+ }

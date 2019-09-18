@@ -1,0 +1,75 @@
+html{
+    font-size: 100%;
+}
+body{
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 60%;
+    background-attachment: fixed;
+}
+.supplierDetails{
+    margin-top: 8vh;
+    width: 70vw;
+    left: 20vw;
+    position: relative;
+    
+    
+}
+#insertSupplier{
+    float: right;
+    margin-top: 3vh;
+
+}
+.input-group-text{
+    width: 11vw;
+}
+.form-control{
+    opacity: 0.7;
+}
+#save_new{
+    float: right;
+}
+
+.Supplier_subtitel1{
+    position: absolute;
+    left: 20vw;
+   
+}
+.Supplier_subtitel2{
+    position: relative;
+    left: 20vw;
+    margin-top: 15vh;
+}
+
+/* supplier table */
+#supplier_table{
+    margin-top: 5vh;
+    position: relative;
+    width: 40vw;
+    left: 20vw;
+}
+
+#idNum{
+    width: 5vw;
+}
+
+#companyN{
+    width: 15vw;
+}
+
+#cui{
+    width: 10wv; 
+}
+#add_remove{
+   width: 5vw;
+}
+
+
+ @media(max-width: 768px){
+     .supplierDetails{
+         right: 2vw;
+         width: 68vw;
+         
+     }
+ }

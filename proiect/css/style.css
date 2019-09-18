@@ -1,0 +1,225 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+/* side-nav */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* sidenav style and dropdown button + links */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+	outline: none;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+/* mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+	color: #f1f1f1;
+	text-decoration-line: none;
+	
+}
+
+/* content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.dropdown-btn:focus{
+	outline: none;
+}
+
+/* dropdown container  */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+
+
+/* title  */
+.title{
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 2vh;
+	font-weight: bold;
+	font-size: 4.6vw;
+	left: 8%;
+}
+
+
+/* toggle button */
+#toggle {
+	position: absolute;
+	right: 20px;
+	top: 14px;
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	float: right;
+	visibility: hidden;
+	opacity: 0;
+
+}
+#toggle .span{
+	height: 3px;
+	background: #000000;
+	backface-visibility: hidden;
+	margin: 5px auto;
+
+}
+
+#toggle.on #one {
+	background: rgb(131, 118, 118);
+	transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+	opacity: 0;
+}
+
+#toggle.on #three {
+	background: rgb(131, 118, 118);
+	transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+.logo_home{
+	height: 75vh;
+	width: 48vw;
+	left: 34%;
+  margin-top: 10px;
+	position: relative;
+}
+
+ /* social media icons */
+ .icons{
+	z-index: 99999;
+	position: fixed;
+	bottom: 0;
+	
+}
+
+ .fa {
+  padding: 0.7vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.1vw;
+	border-radius: 50%;
+  }
+
+.fa-facebook {
+	background: rgb(63, 66, 73);
+  color: white;
+}
+
+.fa-facebook:hover {
+	background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+	background: rgb(63, 66, 73);
+	color: white;
+	}
+	
+  .fa-google:hover {
+	background: #dd4b39;
+	color: white;
+  }
+  
+  .fa-linkedin {
+	background: rgb(63, 66, 73);
+	color: white;
+	}
+	
+  .fa-linkedin:hover {
+	background: #007bb5;
+	color: white;
+	}
+	
+  .fa-skype {
+	background: rgb(63, 66, 73);
+	color: white;
+	}
+	
+  .fa-skype:hover {
+	background: #00aff0;
+	color: white;
+  }
+	
+
+
+
+/* responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ @media(max-width: 768px){
+	#toggle{
+		visibility: visible;
+		opacity: 1;
+		margin-top: 0.2px;
+
+	}
+	#toggle .span.active{
+		transition: all 500ms linear;
+		margin-left: 160px;
+		position: relative;
+	
+
+	}
+	
+	#sidebar, .icons {
+		visibility: hidden;
+		transition: all 500ms linear;
+
+	}
+	#sidebar.active, .icons.active{
+		visibility: visible;
+		width: 26vw;
+		
+		
+	}
+	.title{
+		margin-top: 10px;
+		font-size: 15vw;
+	}
+    .logo_home{
+	 width: 100vw;
+	 left: 10px;
+	 top: 10px;
+	 height: 70vh;
+ }
+}
+
+

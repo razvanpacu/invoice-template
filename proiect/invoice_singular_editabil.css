@@ -1,0 +1,36 @@
+td:focus {
+    /*pentru editarea cantitatii intr-o linie a tabelului din invoice*/
+    color: red;
+    height: 3vh;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    display: inline-block;
+}
+
+td {
+    /*pentru editarea cantitatii intr-o linie a tabelului din invoice*/
+    height: 3vh;
+
+}
+
+td [contenteditable="true"] {
+    display: inline-block;
+    height: 3vh;
+    overflow: scroll;
+}
+
+
+#inputTypeText {
+    width: 2vw;
+
+}
+
+input[type=text] {
+    outline: none;
+    background-color: white;
+    border: 0 solid;
+    color: black;
+}
+

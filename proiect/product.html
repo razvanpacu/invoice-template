@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="icon" type="img/png" href="./logo_small.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="sidebar">
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <button class="dropdown-btn">Invoice 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="./invoice_list.html">Invoice list</a>
+                <a href="./new_invoice.html">New invoice</a>
+            </div>
+            <a href="./supplier.html">Supplier</a>
+
+            <a href="./customer.html">Client</a>
+            <a href="./product.html">Products</a>
+        </div>
+    </div>
+
+
+    <!-- social media icons -->
+    <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.skype.com/ro/" target="_blank" class="fa fa-skype"></a>
+    </div>
+    </nav>
+
+
+    <!-- burger menu -->
+    <div id="toggle" onclick="toggleSidebar()">
+        <div class="span" id="one"></div>
+        <div class="span" id="two"></div>
+        <div class="span" id="three"></div>
+    </div>
+
+    <h1 class="title">Product</h1>
+    <h2 class="Product_subtitel1">Add new product</h2>
+    <div class="content">
+        <div class="productDetails">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Product Name:</span>
+                </div>
+                <input id="newName" type="text" class="form-control" placeholder="ex: Apple" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Product Type:</span>
+                </div>
+                <input id="newProductType" type="text" class="form-control" placeholder=" ex: Food/ NonFood / Services" aria-describedby="basic-addon1">
+            </div>
+
+
+            <button type="button" id="save_new" class="btn btn-primary">Save</button>
+
+        </div>
+    </div>
+
+    <!-- <h2 class="Product_subtitel2">Product List</h2> -->
+
+    
+
+
+    <table class="table" id="product_table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Product type</th>
+                <th scope="col">Edit/Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script src="./js/mainUI.js"></script>
+    <script src="./js/invoice_classes.js"></script>
+    <script src="./js/invoice_return_functions.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+
+</html>

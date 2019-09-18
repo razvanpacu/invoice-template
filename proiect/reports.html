@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reports</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <nav id="sidebar">
+        <div id="sidebar">
+            <div class="sidenav">
+                <a href="index.html">Home</a>
+                <button class="dropdown-btn">Invoice
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="./invoice_list.html">Invoice list</a>
+                    <a href="./new_invoice.html">New invoice</a>
+                </div>
+                <a href="./supplier.html">Supplier</a>
+
+                <a href="./customer.html">Client</a>
+                <a href="./product.html">Products</a>
+                <li><a href="./reports.html">Reports</a></li>
+            </div>
+        </div>
+
+
+        <!-- social media icons -->
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.skype.com/ro/" target="_blank" class="fa fa-skype"></a>
+        </div>
+    </nav>
+
+    <!-- burger menu -->
+    <div id="toggle" onclick="toggleSidebar()">
+        <div class="span" id="one"></div>
+        <div class="span" id="two"></div>
+        <div class="span" id="three"></div>
+    </div>
+
+    <!-- calc budget pe luna app cu input -->
+
+    <div class="top">
+        <div class="budget">
+            <div class="budget__title">
+                Available Budget in <span class="budget__title--month">%Month%</span>:
+            </div>
+
+            <div class="budget__value">+ 2,345.64</div>
+
+            <div class="budget__income clearfix">
+                <div class="budget__income--text">Client</div>
+                <div class="right">
+                    <div class="budget__income--value">+ 4,300.00</div>
+                    <div class="budget__income--percentage">&nbsp;</div>
+                </div>
+            </div>
+
+            <div class="budget__expenses clearfix">
+                <div class="budget__expenses--text">Supplier</div>
+                <div class="right clearfix">
+                    <div class="budget__expenses--value">- 1,954.36</div>
+                    <div class="budget__expenses--percentage">45%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+                <select class="add__type">
+                    <option value="inc" selected>Client</option>
+                    <option value="exp">Supplier</option>
+                </select>
+                <input type="text" class="add__description" placeholder="Add Client/Supplier name">
+                <input type="number" class="add__value" placeholder="Value">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <div class="income">
+                <h2 class="icome__title">Client</h2>
+
+                <div class="income__list">
+
+
+                </div>
+            </div>
+
+
+
+            <div class="expenses">
+                <h2 class="expenses__title">Supplier</h2>
+
+                <div class="expenses__list">
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <hr>
+
+
+
+    <!-- customer list-->
+    <div class="container1">
+        <h1>AAA List</h1>
+
+        <div class="container1">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect02">Customer</label>
+                        </div>
+                        <select class="custom-select" id="posts" onclick="getSelectedValue();"> </select>
+                    </div>
+                    <pre id="output"></pre>
+                    <div>
+
+                    </div>
+                </div>
+
+
+                <!-- supplier list-->
+                <div class="col-sm-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect02">Supplier</label>
+                        </div>
+                        <select class="custom-select" id="posts1"> </select>
+                    </div>
+                    <pre id="output1"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- products list-->
+    <div class="container1">
+
+        <div class="container1">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect02">Products</label>
+                        </div>
+                        <select class="custom-select" id="posts2" onclick="getSelectedValue();"> </select>
+                    </div>
+                    <pre id="output2"></pre>
+                    <div>
+
+                    </div>
+                </div>
+                <hr>
+
+                <script src="./js/mainUI.js"></script>
+                <script src="./js/reports.js"></script>
+
+
+</body>
+
+</html>
